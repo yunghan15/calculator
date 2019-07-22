@@ -1,0 +1,10 @@
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\Users\Cleo\Desktop\summer_19\Calculator\Calculator\obj\Debug\Calculator.pdb
