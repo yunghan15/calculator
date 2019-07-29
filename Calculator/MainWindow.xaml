@@ -1,0 +1,46 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="750">
+    <Grid Background="#FFD4E4EE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="534*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="156*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Botton1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="45,305,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="116,305,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="189,305,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="45,212,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="116,212,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="189,212,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="45,125,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="116,125,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="Botton9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="189,125,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" RenderTransformOrigin="0.491,0.909" Click="BtnClick"/>
+        <Button x:Name="Botton0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="194" Margin="45,392,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="BtnClick"/>
+        <Button x:Name="BottonAddition" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="263,125,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="OpClick"/>
+        <Button x:Name="BottonSubstraction" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="263,212,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="OpClick"/>
+        <Button x:Name="BottonMultiplication" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="263,305,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" Click="OpClick"/>
+        <Button x:Name="BottonDivision" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="263,392,0,0" Height="50" Background="#FFEDF4F9" FontSize="16" RenderTransformOrigin="0.891,0.545" Click="OpClick"/>
+        <Button x:Name="buttonBackspace" Content="←" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="339,125,0,0" Height="137" Background="#FFEDF4F9" FontSize="16" Click="backspaceClick"/>
+        <Button x:Name="buttonAC" Content="AC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="339,305,0,0" Height="137" Background="#FFEDF4F9" FontSize="16" Click="restartClick"/>
+        <Label x:Name="labelPre" Content="Preorder:" HorizontalAlignment="Left" Height="55" Margin="395,125,0,0" VerticalAlignment="Top" Width="80" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16"/>
+        <Label x:Name="labelPost" Content="Postrder:" HorizontalAlignment="Left" Height="55" Margin="395,212,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.511,2.977" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16"/>
+        <Label x:Name="labelDec" Content="Decimal:" HorizontalAlignment="Left" Height="55" Margin="395,305,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.511,2.977" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16"/>
+        <Label x:Name="labelBin" Content="Binary:" HorizontalAlignment="Left" Height="55" Margin="395,392,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.511,2.977" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16"/>
+        <Label x:Name="preorderLabel" Content="" HorizontalAlignment="Left" Height="40" Margin="480,130,0,0" VerticalAlignment="Top" Width="217" Background="White" FontSize="16" VerticalContentAlignment="Center" Grid.ColumnSpan="4"/>
+        <Label x:Name="postorderLabel" Content="" HorizontalAlignment="Left" Height="40" Margin="480,217,0,0" VerticalAlignment="Top" Width="217" Background="White" FontSize="16" VerticalContentAlignment="Center" Grid.ColumnSpan="4"/>
+        <Label x:Name="decimalLabel" Content="" HorizontalAlignment="Left" Height="40" Margin="480,310,0,0" VerticalAlignment="Top" Width="217" Background="White" FontSize="16" VerticalContentAlignment="Center" Grid.ColumnSpan="4"/>
+        <Label x:Name="binaryLabel" Content="" HorizontalAlignment="Left" Height="40" Margin="480,397,0,0" VerticalAlignment="Top" Width="217" Background="White" FontSize="16" VerticalContentAlignment="Center" Grid.ColumnSpan="4"/>
+        <Button x:Name="buttonEnter" Content="ENTER" Height="60" Margin="420,30,39,0" VerticalAlignment="Top" FontSize="16" Click="enterClick" Background="#FFEDF4F9"/>
+        <Label x:Name="inputText" Content="" HorizontalAlignment="Left" Margin="45,30,0,0" VerticalAlignment="Top" Height="60" Width="344" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" Background="White"/>
+        <Button x:Name="buttonQuery" Content="QUERY" Height="60" Margin="36,30,45,0" VerticalAlignment="Top" FontSize="16" Click="queryClick" Background="#FFEDF4F9" Grid.Column="3"/>
+        <Button x:Name="buttonInsert" Content="INSERT" Height="60" Margin="522,30,145,0" VerticalAlignment="Top" FontSize="16" Background="#FFEDF4F9" RenderTransformOrigin="-2.092,0.667" Click="insertClick" Grid.ColumnSpan="4"/>
+
+    </Grid>
+</Window>
